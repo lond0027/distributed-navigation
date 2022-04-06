@@ -15,41 +15,44 @@ body {
 
 header {
   display: flex;
+  justify-content: space-between;
   padding: 1rem;
-  flex-direction: row;
-  flex-wrap: wrap;
   background-color: #e2e2e2;
-
+  align-items: center;
 }
 
 header img {
-  display: inline-flex;
   width: 2rem;
-  order:-1;
+  order: -1;
 }
 
-header h1{
-  order: 0;
+header h1 {
+  padding: .6em;
+  margin: 0;
 }
 
 header p {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  order: 1;
+  margin: 0 auto;
 }
 
-nav ul{
+nav ul {
+  display: flex;
   list-style-type: none;
-  display: inline-flex;
-  justify-content: flex-end;
-  align-items: center;
-  order: 2;
-  padding: 1em;
-
+  padding: 0;
+  margin: 0;
 }
 
-nav a {
-  color: #0074d9
+li {
+  padding: .75em;
+  order: 2;
+}
 
+nav a, nav a:visited {
+  color: #0074d9;
+  padding: .75em;
+  text-decoration: none;
+}
+
+nav a:hover, nav a:focus {
+  background-color: #0074d9;
 }
